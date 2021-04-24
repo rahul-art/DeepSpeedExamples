@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHECKPOINT_PATH=/path/to/checkpoint
+CHECKPOINT_PATH=/kaggle/working/DeepSpeedExamples/Megatron-LM/gpt2
 MPSIZE=1
 NLAYERS=24
 NHIDDEN=1024
