@@ -135,12 +135,10 @@ def generate_samples(model, tokenizer, args, device):
             terminate_runs=0
 
             if mpu.get_model_parallel_rank() == 0:
-                #raw_text = input("\nContext prompt (stop to exit) >>> ")
-		raw_text = "what is freedom of speech?"
+                raw_text = "what is freedom of speech?"
                 while not raw_text:
                     print('Prompt should not be empty!')
-                    #raw_text = input("\nContext prompt (stop to exit) >>> ")
-           	    raw_text = "what is freedom of speech?"
+                    raw_text = "what is freedom of speech?"
                 if "stop" in raw_text:
                     terminate_runs = 1
                 else:
